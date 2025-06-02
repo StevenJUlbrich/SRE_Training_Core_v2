@@ -33,7 +33,7 @@ Welcome to the horror show of banking system monitoring, where "all green" dashb
 
 At 2:17 AM, a Senior SRE wakes abruptly to a critical alert: payment processing is failing, impacting thousands. Tension builds as he scans dashboards showing normal metrics, yet the outage persists. On a video call, the Incident Commander reviews escalating customer complaints, visibly stressed. Meanwhile, a customer anxiously stares at a “Payment Declined” message, bills piling up. The SRE notices a suspicious lack of activity in the fraud detection system, uncovering hidden API timeouts and settlement issues. Determined, he dives deeper as the Commander’s urgent voice demands answers: “We need root cause—fast. Customers are locked out of payments.”
 
-![Panel 1: The Pager Screams](comics\chapter_01-section_001-panel-1-page.jpg)
+![Panel 1: The Pager Screams](comics\chapter_01-section_001-panel-1-page.gif)
 ### Teaching Narrative
 
 When critical alerts wake you during off-hours, your instinct might be to trust your monitoring dashboards. This common reaction exposes a fundamental gap between traditional monitoring and modern observability practices. The Green Wall Fallacy occurs when monitoring systems display a "wall of green" indicators suggesting normal operations while critical services are actually failing.
@@ -72,7 +72,7 @@ To prevent Green Wall Fallacy in your financial systems:
 
 In a dimly lit conference room, illuminated by glowing monitors displaying real-time incident data, a tense post-mortem unfolds. The Senior SRE Engineer, calm but urgent, outlines the timeline of a payment processing outage that stalled over 50,000 transactions per minute. The Junior SRE, visibly stressed, absorbs remediation steps, while the Developer, worried yet determined, reviews the code that triggered the issue. The Product Owner, arms crossed and jaw clenched, processes the impact on customer trust. Amid stress and realization, the team reflects on failures and lessons learned, their focus shifting toward resilience and collective growth.
 
-![Panel 2: Junior SRE Engineer Panics - Understanding Metric Literacy](comics\chapter_01-section_001-panel-2-page.jpg)
+![Panel 2: Junior SRE Engineer Panics - Understanding Metric Literacy](comics\chapter_01-section_001-panel-2-page.gif)
 ### Teaching Narrative
 
 lessons learned from the experience
@@ -112,7 +112,7 @@ To develop metric literacy in financial services:
 
 In the dimly lit operations center at 2:17 AM, tension grips the team as failed payment transactions flood the system. The Senior SRE, focused and determined, investigates the payment API, met with repeated HTTP 500 errors. The Junior Developer, visibly alarmed, tracks the growing disruption, while the Developer scans stable metrics, baffled by the lack of clues. The Product Owner, anxious, observes the mounting backlog and its potential impact. Amid rising stress, the Senior SRE urges a deeper investigation beyond dashboards, embodying calm leadership as the team pivots to hands-on troubleshooting in a high-stakes banking crisis.
 
-![Panel 3: What's Actually Broken? - Evidence-Based Debugging](comics\chapter_01-section_001-panel-3-page.jpg)
+![Panel 3: What's Actually Broken? - Evidence-Based Debugging](comics\chapter_01-section_001-panel-3-page.gif)
 ### Teaching Narrative
 
 When monitoring systems provide contradictory signals, SREs must rely on direct evidence gathering rather than dashboard interpretations. This panel illustrates the critical shift from assumption to verification through systematic direct system interrogation.
@@ -152,7 +152,7 @@ To implement evidence-based debugging in financial environments:
 
 In a fintech war room bathed in striped sunlight, tension simmers beneath a dashboard's reassuring green metrics. The SRE Lead, exuding urgency, reveals critical system failures hidden behind the façade, emphasizing the need for logs, metrics, and traces to uncover the truth. A Junior Developer, flushed with stress, discovers false positives freezing accounts, while a Developer silently questions the tools’ reliability. The Product Owner, alarmed by delayed wire transfers, searches for reassurance. As the SRE Lead sketches a framework for clarity, the team shifts from confusion to resolve, ready to tackle the hidden issues with renewed determination.
 
-![Panel 4: The Dashboard Is Lying - The Three Pillars Framework](comics\chapter_01-section_001-panel-4-page.jpg)
+![Panel 4: The Dashboard Is Lying - The Three Pillars Framework](comics\chapter_01-section_001-panel-4-page.gif)
 ### Teaching Narrative
 
 The most dangerous monitoring failure isn't when dashboards show red - it's when they falsely show green. By leveraging the Three Pillars of Observability – logs, metrics, and traces – teams can uncover the truth behind misleading dashboards and achieve true system visibility.
@@ -193,7 +193,7 @@ To implement the Three Pillars effectively:
 
 In the tense operations war room, bathed in monitor glow, the Senior SRE scrutinizes a flood of ambiguous “Transaction failed” errors, her focus razor-sharp. A nervous Junior Developer hovers, paralyzed by the halted payment pipeline affecting thousands of transactions. The Product Owner anxiously tracks escalating customer and revenue impacts on her dashboard, while the SRE Lead, blending frustration with grim humor, highlights the lack of critical telemetry. A flowchart on the main screen underscores the debugging deadlock, as the team grapples with silence, stress, and the urgent need for answers amid mounting chaos.
 
-![Panel 5: Context is Missing - Structured Telemetry Design](comics\chapter_01-section_001-panel-5-page.jpg)
+![Panel 5: Context is Missing - Structured Telemetry Design](comics\chapter_01-section_001-panel-5-page.gif)
 ### Teaching Narrative
 
 Generic error logs without context are worse than useless - they create the illusion of visibility while providing no actionable information. This panel demonstrates how proper telemetry design transforms unintelligible noise into diagnostic clarity.
@@ -261,7 +261,7 @@ def validate_telemetry(log_entry):
 
 In a tense operations war room, the SRE team grapples with a critical payment processing failure, with 52,000 transactions queued and customer complaints surging. The SRE Lead, steady but urgent, directs the team as the Senior SRE analyzes metrics and logs, the Junior Developer nervously suggests tracing the issue, and the Product Owner proposes unified monitoring to prevent future crises. Amid the stress, collaboration sparks as the team shifts from panic to problem-solving, determined to resolve the issue and strengthen their systems. The scene captures urgency, teamwork, and the emergence of hope in the face of chaos.
 
-![Panel 6: Monologue from SRE Lead - Observability Integration](comics\chapter_01-section_001-panel-6-page.jpg)
+![Panel 6: Monologue from SRE Lead - Observability Integration](comics\chapter_01-section_001-panel-6-page.gif)
 ### Teaching Narrative
 
 The team is guided to actively apply the principles of observability by diagnosing a failure scenario. By connecting logs, metrics, and traces, they learn to form a complete diagnostic picture and understand the importance of integrating these pillars to prevent future issues.
@@ -302,7 +302,7 @@ To achieve effective observability integration:
 
 In a tense late-afternoon war room, the SRE team confronts a hidden issue: a latency spike in the Open Banking API delaying partner settlements. The Junior SRE Engineer realizes the "green" system indicators mask deeper problems, prompting the SRE Lead to guide the team in uncovering the truth. As he enhances logging and adds trace context, the Developer and Product Owner anxiously follow his actions. A new observability panel reveals bottlenecks, easing tension as the team gains clarity. The emotional shift from alarm to determination underscores their resolve to bridge the gap between misleading metrics and system reality.
 
-![Panel 7: Lesson Locked In - System Transparency](comics\chapter_01-section_001-panel-7-page.jpg)
+![Panel 7: Lesson Locked In - System Transparency](comics\chapter_01-section_001-panel-7-page.gif)
 ### Teaching Narrative
 
 The ultimate goal of observability is to make systems transparent - to eliminate the gap between what's happening and what we understand. This panel captures the transformative moment when a team realizes that dashboards don't define reality - they merely represent it.

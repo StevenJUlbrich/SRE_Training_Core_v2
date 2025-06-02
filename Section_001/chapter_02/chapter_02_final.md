@@ -36,7 +36,7 @@ Welcome to the SRE Twilight Zone, where the problem you see is almost never the 
 
 In a tense operations center bathed in soft monitor light, chaos unfolds. A stressed Customer Service Agent juggles mounting complaints about delayed payments, while the Senior SRE scans dashboards, frustrated by unexplained system failures. A nervous Junior Developer hesitates, overwhelmed by error logs, as a Finance Analyst studies transaction diagrams, uncovering a potential issue with an international clearing partner. The room buzzes with urgency, each person grappling with their role in resolving the crisis, as the main screen ominously updates: “50,000+ international transactions delayed—investigation in progress.”
 
-![Panel 1: The Mystery Crash - Root Cause Analysis in Complex Systems](comics\chapter_02-section_01_chapter_02-panel-1-page.jpg)
+![Panel 1: The Mystery Crash - Root Cause Analysis in Complex Systems](comics\chapter_02-section_01_chapter_02-panel-1-page.gif)
 ### Teaching Narrative
 
 When operational issues arise in financial systems, the instinctive response often reveals a fundamental difference between traditional monitoring and modern observability approaches. The reflexive check of system resources (CPU, memory, disk) represents a symptom-focused mindset rather than a cause-focused investigation. Root Cause Analysis (RCA) in distributed financial systems requires looking beyond immediate symptoms to identify underlying causes through symptom vs. cause distinction, architectural awareness, and context-driven investigation.
@@ -71,7 +71,7 @@ Failed wire transfers don't just frustrate customers—they trigger:
 
 Morning sunlight fills the fintech conference room as the team reflects on a critical payment outage that disrupted 50,000 transactions per minute. The Senior SRE, tense but focused, leads the discussion, highlighting the failure of their dashboards to detect the issue. The Junior SRE, Developer, and Product Owner express frustration over system-centric monitoring that missed customer-impacting failures. As the team analyzes gaps in their approach, emotions shift from stress to determination. The Senior SRE sketches a new dashboard prioritizing business-level metrics, and the group collaboratively commits to improving incident detection to better align with customer needs and experiences.
 
-![Panel 2: Dashboard Deceit, Part II - Confirmation Bias in Monitoring](comics\chapter_02-section_01_chapter_02-panel-2-page.jpg)
+![Panel 2: Dashboard Deceit, Part II - Confirmation Bias in Monitoring](comics\chapter_02-section_01_chapter_02-panel-2-page.gif)
 ### Teaching Narrative
 
 The team identifies confirmation bias in their monitoring approach and discusses the importance of aligning dashboards with customer impact. They resolve to incorporate business-level metrics and improve their incident detection processes.
@@ -106,7 +106,7 @@ Dashboard blindness in banking creates cascading failures:
 
 In a tense operations war room, the incident response team grapples with a payment processing outage halting 50,000 transactions per minute. The Senior SRE, focused and commanding, leads the effort, but missing trace IDs in logs leave the team blind to the root cause. A Junior Developer, pale and panicked, scours cryptic error logs, while a pacing Developer links missing traces to cascading fraud detection false positives. The Product Owner watches anxiously as customer complaints surge. The SRE’s realization of the observability gap leaves the room in strained silence, the weight of the crisis and its complexity sinking in.
 
-![Panel 3: The Missing Trace - The Context Gap](comics\chapter_02-section_01_chapter_02-panel-3-page.jpg)
+![Panel 3: The Missing Trace - The Context Gap](comics\chapter_02-section_01_chapter_02-panel-3-page.gif)
 ### Teaching Narrative
 
 This highlights a critical gap in many banking systems: the absence of transaction context across service boundaries. While individual services may log extensively, the inability to follow a single transaction through its entire journey creates a fundamental observability blind spot. This context gap occurs when services fail to propagate essential identifiers, causing correlation loss and transaction amnesia across the distributed system.
@@ -141,7 +141,7 @@ Missing transaction traceability creates severe consequences:
 
 In the bank’s operations center, the Developer disables tracing for performance gains, unaware this silences critical payment processing data. The Junior Developer notices the missing traces but hesitates to act, unsure if it’s intentional. The Senior SRE spots anomalies in fraud alerts but, lacking immediate alarms, moves on. The Product Owner sees the absence of tracing data in a report, briefly concerned but trusting the team. Monitors quietly reveal the vanished traces for 50,000 transactions per minute, foreshadowing a looming incident. Each character’s actions and emotions reflect disconnection from the cascading consequences of a single, seemingly minor change.
 
-![Panel 4: What They Missed - Observability as Architectural Concern](comics\chapter_02-section_01_chapter_02-panel-4-page.jpg)
+![Panel 4: What They Missed - Observability as Architectural Concern](comics\chapter_02-section_01_chapter_02-panel-4-page.gif)
 ### Teaching Narrative
 
 This flashback reveals how observability failures often begin with seemingly innocent technical decisions. When observability is treated as an afterthought rather than an architectural requirement, teams make optimization tradeoffs that sacrifice visibility for marginal performance gains. This creates change impact blindness where engineers modify systems without understanding the observability consequences.
@@ -176,7 +176,7 @@ Sacrificing observability for performance creates hidden costs:
 
 In a glass-walled incident response room during peak banking hours, a team grapples with a critical system failure halting over 50,000 transactions per minute. The Senior SRE leads with calm urgency, coordinating efforts as the Junior Developer analyzes application logs, the Platform Engineer monitors infrastructure metrics, and the Security Analyst investigates fraud alerts. Tension gives way to focused collaboration as they identify a misconfigured API gateway as the root cause. The Junior Developer swiftly patches the issue, restoring transaction flows. Monitors flash green, and the room shifts from high-stress to relief, marked by satisfaction and renewed team trust.
 
-![Panel 5: The Blame Game Begins - Cross-Team Visibility](comics\chapter_02-section_01_chapter_02-panel-5-page.jpg)
+![Panel 5: The Blame Game Begins - Cross-Team Visibility](comics\chapter_02-section_01_chapter_02-panel-5-page.gif)
 ### Teaching Narrative
 
 This demonstrates how shared observability and cross-team collaboration can break the blame cycle. By working together and leveraging a unified view of the transaction flow, teams can validate hypotheses efficiently and resolve incidents faster. Collaborative problem-solving replaces defensive posturing, leading to quicker and more effective resolutions.
@@ -211,7 +211,7 @@ Team fragmentation during incidents multiplies costs:
 
 In a dim conference room, the Senior SRE studies gaps in the payment system's telemetry, frustration etched on their face as they recall a recent outage that disrupted 50,000 transactions per minute. A hesitant Junior Developer enters, clutching a laptop displaying error-filled dashboards. Together, they trace the missing observability that allowed the failure to go undetected, the Junior Developer’s understanding growing. The Senior SRE, now resolute, folds the diagrams and declares, “We chose not to see, but we can choose differently next time.” The Junior Developer nods, ready to help rebuild the system with improved instrumentation and accountability.
 
-![Panel 6: Hector Alavaz Steps In - Observability Preparation](comics\chapter_02-section_01_chapter_02-panel-6-page.jpg)
+![Panel 6: Hector Alavaz Steps In - Observability Preparation](comics\chapter_02-section_01_chapter_02-panel-6-page.gif)
 ### Teaching Narrative
 
 Hector's reflection emphasizes that effective observability is a deliberate and proactive process, not a reactive one. By reviewing the diagram, he highlights the importance of designing observability into systems before incidents occur. This preparation includes intentional instrumentation at critical transaction points, visibility planning for key paths, conducting regular gap analyses, and treating telemetry as foundational infrastructure. His realization underscores that neglecting proper observability is a choice to remain blind during incidents—but it's a choice that can be corrected.
@@ -246,7 +246,7 @@ Lack of observability preparation creates compound risks:
 
 In a tense operations war room, the Senior SRE leads a focused effort to address a critical payment system failure. As sunlight filters in, she projects a detailed transaction trace, explaining how better instrumentation could have quickly identified the issue. The Junior Developer, initially frozen in shock, begins to grasp the lesson, while the Developer and Product Owner, visibly stressed, start to see hope in the proposed solution. The room shifts from chaos to determination as the team aligns around the importance of observability, ready to tackle the crisis with newfound clarity and resolve.
 
-![Panel 7: The Corrected View - Strategic Instrumentation](comics\chapter_02-section_01_chapter_02-panel-7-page.jpg)
+![Panel 7: The Corrected View - Strategic Instrumentation](comics\chapter_02-section_01_chapter_02-panel-7-page.gif)
 ### Teaching Narrative
 
 Juana's overlay demonstrates strategic instrumentation—the thoughtful placement of telemetry to maximize diagnostic value. Rather than logging everything or nothing, effective observability requires boundary focus at service interfaces, context preservation across systems, correlation design between different telemetry types, and complete critical path coverage. The same system can be opaque or transparent depending on instrumentation choices.
@@ -281,7 +281,7 @@ Strategic instrumentation transforms incident response:
 
 In the tense, fluorescent-lit war room at 2:17 AM, a payment processing failure halts 54,000 transactions, leaving the team scrambling. The Junior SRE discovers their own change—disabling the observability pipeline—caused the blind spot that led to the crash. Her revelation shifts the room’s mood from confusion to determination. The Senior SRE, Developer, and Product Owner, all visibly stressed, work to restore functionality as green checkmarks slowly reappear on the dashboard. Though shaken, the team unites under a shared realization: maintaining visibility is critical and requires constant vigilance. The atmosphere is heavy with urgency, relief, and a hard-earned lesson.
 
-![Panel 8: Team Realization - The Observability Mindset](comics\chapter_02-section_01_chapter_02-panel-8-page.jpg)
+![Panel 8: Team Realization - The Observability Mindset](comics\chapter_02-section_01_chapter_02-panel-8-page.gif)
 ### Teaching Narrative
 
 This realization represents a profound shift from viewing observability as someone else's responsibility to recognizing it as collective obligation. The observability mindset means accepting active responsibility for visibility, adopting visibility-first thinking in all decisions, recognizing self-inflicted blindness patterns, and maintaining change impact consciousness. Teams create their own visibility or blindness through daily choices.
@@ -316,7 +316,7 @@ The observability mindset gap costs dearly:
 
 In the late afternoon light of the operations war room, tension grips the team as they confront a payment processing outage delaying 52,000 transactions. The Senior SRE, calm but focused, analyzes the issue, guiding the Junior Developer, who is overwhelmed but determined, and the Developer, who identifies a misconfigured telemetry flag as the root cause. The Product Owner, visibly anxious, watches the failure numbers climb. With steady leadership, the Senior SRE reframes the problem, urging better observability. The team shifts from panic to action, collaboratively resolving the issue and restoring clarity to their system.
 
-![Panel 9: Closing Shot - Systems That Speak](comics\chapter_02-section_01_chapter_02-panel-9-page.jpg)
+![Panel 9: Closing Shot - Systems That Speak](comics\chapter_02-section_01_chapter_02-panel-9-page.gif)
 ### Teaching Narrative
 
 Hector's observation reframes observability as teaching systems to communicate, not just monitoring them. This means implementing active telemetry where systems report their state proactively, designed communication through consistent patterns, linguistic frameworks with standardized vocabularies, and conversational debugging approaches. Systems don't naturally communicate well—they must be deliberately taught through thoughtful instrumentation and design.

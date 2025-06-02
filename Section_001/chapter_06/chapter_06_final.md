@@ -37,7 +37,7 @@ Welcome to the dark heart of metrics hell, where numbers lie, dashboards gasligh
 
 In the bank’s operations center at 2:13 AM, tension is palpable as a critical payment outage unfolds. The Senior SRE, focused and sweating, monitors spiking transaction failures, while alarms blare about API latency and fraud anomalies. The Junior Developer, pale and hesitant, investigates stalled payment queues, and the Monitoring Specialist struggles to reconcile conflicting metrics, fearing a false alarm. The Team Lead, stressed but decisive, urges swift action to protect customer trust. A breakthrough emerges as the Monitoring Specialist identifies a misconfigured alert causing the issue. Collaboration intensifies as the team works urgently to restore operations and mitigate the crisis.
 
-![Panel 1: The Phantom Spike - Metric Reliability](comics\chapter_06-section_001_chapter_06-panel-1-page.jpg)
+![Panel 1: The Phantom Spike - Metric Reliability](comics\chapter_06-section_001_chapter_06-panel-1-page.gif)
 ### Teaching Narrative
 
 In the heat of an incident, distinguishing between real system failures and misleading metrics is critical. When CPU charts spike and alarms trigger, teams must quickly assess whether the data reflects actual problems or is an anomaly. This ability to think critically under pressure prevents wasted effort and ensures focus on resolving genuine issues.
@@ -62,7 +62,7 @@ False metrics create operational chaos in financial systems. Unnecessary interve
 
 In a tense, sunlit operations center, the Senior SRE urgently analyzes a dashboard flooded with red alerts as payment failures spike to 52,000 per minute. The Junior Developer, pale and trembling, struggles to address the fallout of high-cardinality tagging, while the Developer mutters in frustration over unreadable metrics. The Product Owner, alarmed by escalating Open Banking API errors and customer complaints, grips a chair, realizing the business risks. With mounting pressure, the Senior SRE demands an immediate rollback to restore visibility. The team scrambles to act, driven by urgency and hope, as they fight to regain control of the system.
 
-![Panel 2: Cardinality Explosion - Metric Design](comics\chapter_06-section_001_chapter_06-panel-2-page.jpg)
+![Panel 2: Cardinality Explosion - Metric Design](comics\chapter_06-section_001_chapter_06-panel-2-page.gif)
 ### Teaching Narrative
 
 Cardinality explosion occurs when well-intentioned instrumentation creates thousands of unique time series. Tagging infrastructure metrics with high-cardinality dimensions like user IDs transforms simple measurements into unmanageable data sets. This design flaw makes aggregation meaningless and patterns impossible to discern.
@@ -87,7 +87,7 @@ Cardinality explosion in financial systems creates both technical and business p
 
 In a glass-walled incident response room under harsh fluorescent lights, a tense team confronts a critical system failure. The Senior SRE, focused and determined, scrutinizes a spiking metric on the dashboard, while the Junior Developer hesitates, overwhelmed by the cryptic data. The Developer frantically searches logs for answers, his worry evident, as the Product Owner anxiously monitors escalating business impacts on her tablet. Alerts of payment failures and API timeouts amplify the pressure, with the team racing to decode the enigmatic metric and avert disaster, their collective urgency underscoring the high stakes of the financial system at risk.
 
-![Panel 3: The Naming Nightmare - Metric Taxonomy](comics\chapter_06-section_001_chapter_06-panel-3-page.jpg)
+![Panel 3: The Naming Nightmare - Metric Taxonomy](comics\chapter_06-section_001_chapter_06-panel-3-page.gif)
 ### Teaching Narrative
 
 Incomprehensible metric names transform diagnostic tools into mysterious artifacts. Without clear naming conventions, semantic clarity, and documentation, metrics become uninterpretable orphans. Teams waste precious incident response time decoding cryptic abbreviations instead of solving problems.
@@ -112,7 +112,7 @@ Poor metric taxonomy in banking systems creates operational risk and compliance 
 
 In a glass-walled conference room overlooking the financial district, the Senior SRE methodically redraws technical metrics into business-focused KPIs on the whiteboard, her determined focus anchoring the tense room. A Junior Developer, pale with shock, stares at a notification of a critical banking deadlock, while the stressed Product Owner connects the disruption to customer complaints, her voice tight with urgency. A Developer near the door watches the escalating API errors with visible worry. The room buzzes with pressure as the team grapples with translating technical chaos into actionable insights to resolve a mounting banking crisis.
 
-![Panel 4: Metric Hygiene Time - Metric Hierarchy](comics\chapter_06-section_001_chapter_06-panel-4-page.jpg)
+![Panel 4: Metric Hygiene Time - Metric Hierarchy](comics\chapter_06-section_001_chapter_06-panel-4-page.gif)
 ### Teaching Narrative
 
 Metric hierarchy organizes measurements by their relationship to business outcomes. Starting with customer experience metrics, drilling through service performance indicators, down to resource utilization creates clear diagnostic paths. This structure transforms flat collections of technical measurements into navigable maps of system behavior.
@@ -137,7 +137,7 @@ Flat metric organization delays incident resolution in financial systems. When c
 
 In the operations war room, tension fills the air as a critical incident unfolds. A Junior SRE, alarmed by a cache miss rate anomaly, struggles to convey its urgency. The Senior SRE connects the issue to cascading payment failures, their posture tense with determination. A Developer, pale and shaken, discovers API timeouts blocking fintech integrations, while the Product Owner, clutching a tablet, realizes the anomaly’s link to rising fraud alerts and customer complaints. Amid rapid typing and urgent discussions, the team races to instrument the cache layer, determined to resolve the crisis threatening thousands of transactions per minute.
 
-![Panel 5: Symptoms vs Signals - Metric Selection](comics\chapter_06-section_001_chapter_06-panel-5-page.jpg)
+![Panel 5: Symptoms vs Signals - Metric Selection](comics\chapter_06-section_001_chapter_06-panel-5-page.gif)
 ### Teaching Narrative
 
 Effective metric selection prioritizes signals over symptoms. While CPU spikes and memory usage indicate something is happening, functional metrics like cache hit rates reveal what's actually wrong. Instrumenting causal mechanisms provides faster diagnosis than monitoring their downstream effects.
@@ -162,7 +162,7 @@ Missing critical signals in financial systems delays issue resolution and increa
 
 In a tense operations war room, the Senior SRE leads a team tackling a surge in payment processing failures, with red alerts and spiking error rates dominating the monitors. The Junior Developer, overwhelmed, struggles with API issues, while the Product Owner flags mislabeled metrics and identifies key correlations. A Developer streamlines the cluttered dashboard, clarifying critical data. As a new timeline overlay links the issue to a scheduled batch settlement, relief spreads through the team. Stress shifts to collaboration as the improved visualization drives focused problem-solving, restoring order to the banking platform.
 
-![Panel 6: Dashboard Cleanup Begins - Visualization Design](comics\chapter_06-section_001_chapter_06-panel-6-page.jpg)
+![Panel 6: Dashboard Cleanup Begins - Visualization Design](comics\chapter_06-section_001_chapter_06-panel-6-page.gif)
 ### Teaching Narrative
 
 Effective visualization design transforms data displays into diagnostic tools. Removing visual noise, clarifying labels, adding contextual annotations, and enabling navigation paths create dashboards that tell coherent stories. Well-designed visualizations accelerate pattern recognition and incident resolution.
@@ -187,7 +187,7 @@ Poor visualization design in financial systems extends incident duration and inc
 
 In a tense fintech war room, sunlight cuts through blinds as the Senior SRE analyzes spiking red graphs on her dashboard, signaling payment failures caused by cache drift. A Junior Developer, pale and anxious, watches error logs of mismatched balances, while a Developer urgently types rollback commands. The Product Owner, initially confused, realizes the cascading impact of a configuration change, from database overload to false fraud alerts. The team works under immense pressure, emotions running high, as they stabilize transaction flows. The room hums with urgency, each role reflecting the high stakes of resolving a critical banking incident in real time.
 
-![Panel 7: Reality Revealed - Pattern Recognition](comics\chapter_06-section_001_chapter_06-panel-7-page.jpg)
+![Panel 7: Reality Revealed - Pattern Recognition](comics\chapter_06-section_001_chapter_06-panel-7-page.gif)
 ### Teaching Narrative
 
 Pattern recognition transforms metrics from numbers into narratives. When properly visualized, complex causal chains become visible: configuration changes affect cache behavior, increasing database load, elevating CPU usage. Effective observability makes these relationships apparent rather than hidden.
@@ -212,7 +212,7 @@ Pattern recognition capabilities determine how quickly financial institutions re
 
 In a tense operations room, the Senior SRE calmly analyzes a dashboard of surging transaction failures, her authority steady amidst chaos. The Junior Developer, pale and overwhelmed, hesitates before error logs, while a Developer behind him clutches a notepad, piecing together the connection between API failures and fraud alerts. The Product Owner, visibly stressed, monitors escalating customer impact and fields urgent messages from stakeholders. Amid the quiet hum of servers and pinging alerts, the Senior SRE breaks the silence with a teaching moment, guiding the team to interpret the metrics and restore the system, sparking newfound determination in the Junior Developer.
 
-![Panel 8: Lesson Locked In - Metrics as Diagnosis](comics\chapter_06-section_001_chapter_06-panel-8-page.jpg)
+![Panel 8: Lesson Locked In - Metrics as Diagnosis](comics\chapter_06-section_001_chapter_06-panel-8-page.gif)
 ### Teaching Narrative
 
 Metrics are diagnostic tools, not just status indicators. Like medical charts, they reveal coherent stories about system health. Properly designed metrics help identify symptoms, perform differential diagnoses, validate treatments, and monitor the ongoing health of complex financial systems.
@@ -237,7 +237,7 @@ Diagnostic-quality metrics in banking systems enable faster issue resolution and
 
 In the pre-dawn glow of the operations war room, tension is palpable as the team battles a critical payment processing failure. The Senior SRE, calm but resolute, scans flashing red alerts, while the Junior Developer freezes in shock at cascading API errors. The Developer works furiously to trace the issue, frustration etched on his face, as the Product Owner clutches her notepad, overwhelmed by rising fraud alerts. Amid the chaos, the Senior SRE’s determined words spark a shift, turning data into a shared narrative. The team begins to align, driven by urgency and the clarity of their system’s heartbeat.
 
-![Panel 9: Epilogue Panel - Communication Design](comics\chapter_06-section_001_chapter_06-panel-9-page.jpg)
+![Panel 9: Epilogue Panel - Communication Design](comics\chapter_06-section_001_chapter_06-panel-9-page.gif)
 ### Teaching Narrative
 
 Turning raw signals into meaningful communication is the essence of observability. Effective telemetry bridges the gap between systems and operators, enabling dashboards to narrate clear, actionable stories. These stories should highlight what matters most, fostering shared understanding and guiding focus.

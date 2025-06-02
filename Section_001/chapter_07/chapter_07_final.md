@@ -34,7 +34,7 @@ Welcome to the dark underbelly of transaction monitoring, where “all systems o
 
 In a dimly lit operations war room, tension runs high as a Junior SRE Engineer anxiously monitors a stalled wire transfer and alarming user drop-off metrics. The SRE Engineer, rigid with stress, scans backend data, struggling to reconcile healthy system metrics with failing user experiences. Nearby, the Product Owner, overwhelmed by customer complaints, grips a marker, realizing the gap between technical performance and user frustration. A simulated banking app reflects user impatience, amplifying the urgency. The team’s strained expressions and terse exchanges highlight the critical need to prioritize customer experience over system health in resolving the issue.
 
-![Panel 1: The Silent Delay](comics\chapter_07-section_001_chapter_07-panel-1-page.jpg)
+![Panel 1: The Silent Delay](comics\chapter_07-section_001_chapter_07-panel-1-page.gif)
 ### Teaching Narrative
 
 Transaction Experience Monitoring focuses on measuring the actual customer experience of financial transactions, tracking end-to-end timing from the user's perspective, not just individual service performance. This scene illustrates a critical blind spot: the gap between technical success and user experience. The system functions according to conventional metrics, yet customers abandon transactions due to unacceptable delays.
@@ -59,7 +59,7 @@ A wire transfer system that "works" technically but takes too long creates real 
 
 In the dimly lit operations war room at 2:17 AM, tension runs high as a payment processing outage impacts 52,000 transactions per minute. The Senior SRE, focused but frustrated, discovers missing trace identifiers in the logs, prompting a sharp realization: the new payment gateway was deployed without proper instrumentation. The Junior Developer, frozen with anxiety, struggles to find a solution, while the Product Owner, overwhelmed by escalating issues and stakeholder pressure, battles to maintain composure. The team’s stress is palpable, underscoring the critical need for robust tracing in the high-stakes world of financial systems.
 
-![Panel 2: Span-Free Zone](comics\chapter_07-section_001_chapter_07-panel-2-page.jpg)
+![Panel 2: Span-Free Zone](comics\chapter_07-section_001_chapter_07-panel-2-page.gif)
 ### Teaching Narrative
 
 Distributed tracing provides end-to-end visibility into request flows across multiple services through trace context (identifiers that follow requests), spans (time records in each component), parent-child relationships (showing how service calls relate), and baggage (propagated metadata). Daniel's inability to follow transactions represents a common challenge when trace instrumentation is deliberately disabled.
@@ -84,7 +84,7 @@ Modern banking systems are composed of dozens or hundreds of microservices colla
 
 Morning sunlight streams into the fintech war room as the team grapples with a critical system outage, halting over 50,000 transactions per minute. The Senior SRE, calm but focused, directs efforts toward a red-highlighted node on the dashboard, while the Junior Developer, pale and anxious, investigates API timeouts. A Developer identifies latency from a settlement batch process, alerting the stressed Product Owner to escalating client impacts. Despite the tension, the team rallies under the SRE's leadership, coordinating to trace and resolve the issue. The room buzzes with urgency and determination, unified in restoring stability to the disrupted payment pipeline.
 
-![Panel 3: The Blame Bounces](comics\chapter_07-section_001_chapter_07-panel-3-page.jpg)
+![Panel 3: The Blame Bounces](comics\chapter_07-section_001_chapter_07-panel-3-page.gif)
 ### Teaching Narrative
 
 Cross-service visibility enables teams to collaboratively identify and resolve issues by providing a unified understanding of request flows. Boundary instrumentation captures context across services, path reconstruction assembles complete flows, timing correlation tracks time across components, and failure propagation visibility shows how errors affect downstream components. This fosters teamwork and eliminates the need for blame-shifting.
@@ -109,7 +109,7 @@ Cross-service visibility is essential for both technical and business reasons in
 
 In a dimly lit server room, the Senior SRE calmly but urgently analyzes a holographic trace, pinpointing a core banking deadlock that has halted 52,000 transactions. The Junior Developer, pale and trembling, struggles with error logs, while the Developer begins to grasp the issue, her tension easing slightly. The Product Owner, clutching a tablet of failed payments, processes the scale of the crisis with visible stress. As the Senior SRE explains recovery steps with precision, the room’s tense atmosphere is underscored by the hum of servers and flickering holograms, embodying both the gravity of the failure and hope for resolution.
 
-![Panel 4: The Ghost Span Appears](comics\chapter_07-section_001_chapter_07-panel-4-page.jpg)
+![Panel 4: The Ghost Span Appears](comics\chapter_07-section_001_chapter_07-panel-4-page.gif)
 ### Teaching Narrative
 
 Trace visualization is the graphical representation of request flows through distributed systems, brought to life here as a dynamic hologram. Using sequential timelines, hierarchical relationships, duration emphasis, and anomaly highlighting, Hector's holographic diagram provides an immediate and precise understanding of the issue. What might have taken hours of debate is now resolved in moments, showcasing the power of visualized traces in transforming troubleshooting from guesswork to clarity.
@@ -134,7 +134,7 @@ During incidents affecting critical transactions like wire transfers, visual ide
 
 In a tense operations room of a digital bank, the Senior SRE identifies a critical issue causing 50,000 delayed transactions per minute: a lost parent_span_id disrupting the payment pipeline and triggering false fraud alerts. She calmly explains the problem to a nervous Junior Developer, whose initial panic shifts to determination as he grasps the issue. Together, they strategize a fix to ensure proper trace context propagation, aiming to restore transaction flow. The room’s clinical atmosphere heightens the urgency, but the Senior SRE’s steady guidance and reassurance bring focus and resolve to the team.
 
-![Panel 5: OpenTelemetry Unleashed](comics\chapter_07-section_001_chapter_07-panel-5-page.jpg)
+![Panel 5: OpenTelemetry Unleashed](comics\chapter_07-section_001_chapter_07-panel-5-page.gif)
 ### Teaching Narrative
 
 Tracing implementation involves adding instrumentation libraries that create and propagate trace context, ensuring context propagation across service boundaries, generating span records for each service's work, and configuring collectors to gather trace data. The parent-child structure transforms individual timing records into a comprehensive picture of transaction flow.
@@ -159,7 +159,7 @@ Standardized tracing implementation addresses both technical and organizational 
 
 In the glass-walled operations room, tension is thick as a payment system failure unfolds. The Senior SRE, focused and rigid, analyzes spiking latency and failed transactions, issuing swift instructions. The Junior Developer, pale and overwhelmed, identifies a bottleneck in the `auth` service. A Developer connects error logs to Open Banking API timeouts, annotating the trace graph with urgency. Meanwhile, the Product Owner, stressed and anxious, monitors customer impact metrics as unresolved incidents climb. A heatmap glows with warnings, and the team works under intense pressure, each person’s visible emotions reflecting the high stakes of resolving the crisis.
 
-![Panel 6: Trace ID Threading](comics\chapter_07-section_001_chapter_07-panel-6-page.jpg)
+![Panel 6: Trace ID Threading](comics\chapter_07-section_001_chapter_07-panel-6-page.gif)
 ### Teaching Narrative
 
 Context propagation maintains and shares trace information across system boundaries through header passing, cross-telemetry correlation (including trace IDs in logs and metrics), baggage handling, and middleware integration. This integration transforms traces from an isolated tool into a unifying framework enhancing all observability data.
@@ -184,7 +184,7 @@ Effective context propagation creates unified visibility into transaction proces
 
 In a tense incident response room, the payment system grinds to a halt, causing a backlog of 50,000 transactions per minute. The Senior SRE identifies a rogue retry loop in the ledger-service as the root cause, triggering cascading failures. The Junior Developer, overwhelmed with guilt, works on a hotfix, while the Developer confirms error propagation. The Product Owner anxiously monitors stakeholder updates. Amid rising pressure, the Senior SRE devises a rollback plan, isolating the issue and coordinating recovery. As metrics improve and the backlog clears, the team regains composure, containing the crisis through swift, decisive collaboration.
 
-![Panel 7: Root Cause Found](comics\chapter_07-section_001_chapter_07-panel-7-page.jpg)
+![Panel 7: Root Cause Found](comics\chapter_07-section_001_chapter_07-panel-7-page.gif)
 ### Teaching Narrative
 
 Transaction analysis examines trace data through pattern recognition, timing analysis, error propagation tracking, and configuration validation. The trace visualization exposes not just where the problem occurs but exactly how and why, transforming incident response from investigation to verification.
@@ -209,7 +209,7 @@ Detailed transaction analysis provides operational value through rapid issue res
 
 In a serene park at sunset, a tense banking incident unfolds. The Senior SRE, calm and reflective, studies payment flow diagrams, likening tracing to uncovering a story. Nearby, the anxious Junior Developer freezes before a screen of red alerts, unsure how to proceed. The Developer, frustrated but focused, deciphers a service dependency causing the cascade. Behind them, the Product Owner observes with concern, weighing business impacts. The tranquil setting contrasts the team’s emotional spectrum—calm, panic, determination—highlighting the high-stakes drama of real-time incident response and the interplay of expertise under pressure.
 
-![Panel 8: Lesson Locked In](comics\chapter_07-section_001_chapter_07-panel-8-page.jpg)
+![Panel 8: Lesson Locked In](comics\chapter_07-section_001_chapter_07-panel-8-page.gif)
 ### Teaching Narrative
 
 Forensic observability reconstructs exactly what happened during system operations through sequence recreation, causal chain identification, behavioral analysis, and evidence preservation. Traces provide spatial and temporal context that other telemetry types can't, revealing the complete story of system behavior enabling precise understanding and action.

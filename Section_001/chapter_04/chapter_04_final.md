@@ -35,7 +35,7 @@ Welcome to the circus of modern alerting, where every beeping dashboard is a rin
 
 In a sunlit meeting room, the team analyzes a critical overnight incident involving CPU saturation in the fraud detection system. The Senior SRE, tense but focused, recounts the storm of alerts that risked obscuring real issues, while the Junior Developer and others grapple with the operational implications. The Product Owner, initially confused, grows alarmed at the potential customer impact. As discussions unfold, the team identifies the need for better alert tuning and suppression rules. Tension shifts to determination as they collaboratively outline improvements, leaving the meeting resolved to enhance system reliability and prevent future alert noise.
 
-![Panel 1: The All-Night Alarm - Alert Fatigue](comics\chapter_04-section_001_chapter_04-panel-1-page.jpg)
+![Panel 1: The All-Night Alarm - Alert Fatigue](comics\chapter_04-section_001_chapter_04-panel-1-page.gif)
 ### Teaching Narrative
 
 The team learns that excessive, non-actionable alerts contribute to alert fatigue, which can desensitize operators and reduce overall reliability. They recognize the need to refine alert thresholds and implement suppression rules to ensure alerts drive meaningful intervention.
@@ -60,7 +60,7 @@ Alert fatigue in financial services creates cascading failures: exhausted engine
 
 In a bustling fintech operations center, a stressed Junior Developer struggles to manage overwhelming CPU alerts, fearing critical issues might be missed. The Senior SRE notices the inefficiency, steps in, and calmly explains the importance of value-based alerts—focusing on metrics tied to real customer impact, like failed transactions or compliance breaches. Demonstrating how to filter out noise, she reconfigures the system to prioritize meaningful risks. The Junior Developer, initially anxious and confused, begins to understand, his tension easing as he learns to focus on alerts that truly protect the bank and its customers.
 
-![Panel 2: False Positives Everywhere - Value-Based Alerting](comics\chapter_04-section_001_chapter_04-panel-2-page.jpg)
+![Panel 2: False Positives Everywhere - Value-Based Alerting](comics\chapter_04-section_001_chapter_04-panel-2-page.gif)
 ### Teaching Narrative
 
 Value-Based Alerting represents a fundamental reorientation of alert design around business value and customer impact. Instead of watching technical metrics, it focuses on impact prioritization, outcome focus, false positive minimization, and risk-based thresholds. This approach transforms operational efficiency by focusing engineers on conditions that actually affect customers, transactions, or compliance requirements.
@@ -85,7 +85,7 @@ False positive alerts in banking create a "boy who cried wolf" scenario: critica
 
 In a tense operations war room, the team reviews a recent API outage. The Senior SRE, stressed but focused, analyzes spiking error rates, while a panicked Junior Developer struggles to interpret the data. The Product Owner connects backend errors to a massive login failure, prompting the Customer Experience Lead to highlight a critical oversight: alerts prioritized machine metrics over customer impact. Her pointed analysis shifts the room’s focus, sparking a collective realization that customer-centric monitoring is essential. The tension eases as the team commits to preventing similar failures, prioritizing user experience over purely technical metrics.
 
-![Panel 3: Looking for Symptoms, Not Signals - Customer-Centric Alerts](comics\chapter_04-section_001_chapter_04-panel-3-page.jpg)
+![Panel 3: Looking for Symptoms, Not Signals - Customer-Centric Alerts](comics\chapter_04-section_001_chapter_04-panel-3-page.gif)
 ### Teaching Narrative
 
 Customer-Centric Alerting focuses on user experience rather than system internals. It emphasizes experience metrics, impact correlation, symptom skepticism, and outcome observation. This approach ensures operational teams focus on what matters: whether customers can access accounts, complete transactions, and manage their money successfully.
@@ -110,7 +110,7 @@ When alerts miss customer-impacting issues, banks face immediate consequences: s
 
 In a tense incident war room, the Senior SRE leads with composed urgency, analyzing spiking error budgets and escalating API timeouts on live dashboards. Their steady voice emphasizes customer and compliance impacts. A stressed Junior Developer hesitates over halted transactions, while a worried Product Owner clutches a notepad, alarmed by regulatory risks. Across the table, a Developer identifies a potential root cause, linking API failures to surging mobile traffic. The room brims with tension as burning metrics and flashing alerts demand immediate action, highlighting the high-stakes intersection of technical expertise, business impact, and emotional resilience in fintech reliability.
 
-![Panel 4: Burn Rate Awakening - SLO-Based Alerting](comics\chapter_04-section_001_chapter_04-panel-4-page.jpg)
+![Panel 4: Burn Rate Awakening - SLO-Based Alerting](comics\chapter_04-section_001_chapter_04-panel-4-page.gif)
 ### Teaching Narrative
 
 SLO-Based Alerting uses Service Level Objectives and error budgets to create dynamic alerts that respond to changing conditions rather than fixed values. This approach naturally aligns with business priorities, adapts to changing conditions, and differentiates between minor fluctuations and serious problems requiring immediate attention.
@@ -135,7 +135,7 @@ SLO violations in banking directly translate to business impact: failed transact
 
 In the dimly lit operations center of a digital bank, a Senior SRE calmly but urgently investigates a critical alert: payment latency has doubled, threatening tens of thousands of transactions. A Junior Developer, shocked and tense, watches as she explains the new alert logic and mitigation tools, linking to real-time logs and a runbook detailing the issue—settlement batch deadlock. Despite the late hour and high stakes, her steady guidance helps the developer shift from alarm to understanding. The hum of servers and glowing dashboards underscore the tense yet controlled atmosphere as they prepare to resolve the incident together.
 
-![Panel 5: Fixing the Noise - Alert Engineering](comics\chapter_04-section_001_chapter_04-panel-5-page.jpg)
+![Panel 5: Fixing the Noise - Alert Engineering](comics\chapter_04-section_001_chapter_04-panel-5-page.gif)
 ### Teaching Narrative
 
 Alert Engineering involves deliberate design of complete alert experiences, including actionable context, multi-window detection, direct navigation to diagnostic tools, and resolution guidance. This transforms alerts from mere notifications into comprehensive diagnostic packages that accelerate incident response.
@@ -160,7 +160,7 @@ Well-engineered alerts dramatically reduce Mean Time To Resolution (MTTR) in ban
 
 In a tense war room illuminated by monitors, a simulated payment system failure unfolds, spiking transaction errors and triggering red alerts. The Senior SRE, calm and focused, highlights the precision of alerts that provided actionable insights. The Junior Developer, initially anxious, shifts to understanding, while the Product Owner processes the business impact with determination. The Facilitator emphasizes the importance of refining alerts for meaningful results, sparking a collaborative discussion. The room transitions from tension to a shared sense of accomplishment and resolve, as the team reflects on lessons learned and plans improvements with renewed energy.
 
-![Panel 6: Test Fire Drill - Alert Validation](comics\chapter_04-section_001_chapter_04-panel-6-page.jpg)
+![Panel 6: Test Fire Drill - Alert Validation](comics\chapter_04-section_001_chapter_04-panel-6-page.gif)
 ### Teaching Narrative
 
 Alert Validation through controlled testing ensures alerting systems detect critical issues and provide actionable context. This practice transforms alert design from theoretical to evidence-based, verifying that alerts will fulfill their critical function when needed in production.
@@ -185,7 +185,7 @@ Untested alerts in banking create false confidence that leads to extended outage
 
 In the fintech operations center, sunlight filters through glass walls as the Senior SRE, unusually relaxed and smiling, explains a new alerting dashboard designed for clarity and focus. The team, initially tense and stressed, gradually shifts to cautious optimism as they grasp the system’s human-centered logic: alerts now answer key questions to prioritize action and reduce noise. The Junior Developer, once anxious, exhales in relief, realizing he might finally sleep uninterrupted. Around the table, tension eases, and smiles emerge as the team aligns on building not just alarms, but trust and operational clarity under the Senior SRE’s calm leadership.
 
-![Panel 7: Lesson Locked In - Human-Centered Alerting](comics\chapter_04-section_001_chapter_04-panel-7-page.jpg)
+![Panel 7: Lesson Locked In - Human-Centered Alerting](comics\chapter_04-section_001_chapter_04-panel-7-page.gif)
 ### Teaching Narrative
 
 Human-Centered Alerting designs notifications around the needs of the humans receiving them, emphasizing cognitive support, considering psychological impact, facilitating rapid decision-making, and minimizing cognitive load. This approach recognizes that effective incident response depends on human factors, not just technical sophistication.

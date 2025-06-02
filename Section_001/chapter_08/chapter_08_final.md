@@ -39,7 +39,7 @@ If you’re not building systems that snitch on themselves, you’re just hoping
 
 In a tense glass-walled conference room, the Senior SRE leads a team dissecting a catastrophic payment processing failure affecting over 50,000 transactions per minute. Red alerts flash on dashboards as the Junior Developer, overwhelmed, uncovers API timeouts, while the Developer identifies observability gaps in the system. The Product Owner, pale and rigid, absorbs the customer impact. Amid the stress, the Senior SRE calmly directs the team to map the failure, their collective focus shifting from shock to determination. The atmosphere is heavy with responsibility but charged with a shared resolve to enhance the bank’s resilience.
 
-![Panel 1: Incident Playback Begins](comics\chapter_08-section_001_chapter_08-panel-1-page.jpg)
+![Panel 1: Incident Playback Begins](comics\chapter_08-section_001_chapter_08-panel-1-page.gif)
 ### Teaching Narrative
 
 Incident retrospectives focused on telemetry effectiveness transform past failures into future improvements. By examining not just what went wrong technically but how well observability tools performed, teams identify visibility gaps and detection delays that prolonged the incident.
@@ -64,7 +64,7 @@ Detection delays directly multiply incident costs: every minute of undetected ou
 
 In a sunlit conference room, tension hangs thick as the team reviews a major payment outage. The Senior SRE, focused and determined, analyzes failure graphs, while the Junior Developer, pale and anxious, struggles to connect cascading errors. The Product Owner, stressed but composed, monitors customer complaints, and the Developer identifies misaligned timestamps as a root cause. The Senior SRE emphasizes the need for synchronized telemetry and standardized formats, rallying the team toward actionable solutions. As understanding spreads, the team’s resolve strengthens, transforming frustration into focused collaboration, determined to prevent future failures with improved visibility and swift response.
 
-![Panel 2: Everyone Blames the Logs](comics\chapter_08-section_001_chapter_08-panel-2-page.jpg)
+![Panel 2: Everyone Blames the Logs](comics\chapter_08-section_001_chapter_08-panel-2-page.gif)
 ### Teaching Narrative
 
 The team reflects on how inconsistent telemetry, misaligned timestamps, and varying formats hindered incident response. They identify the need for standardized telemetry practices to improve visibility and correlation during future incidents.
@@ -89,7 +89,7 @@ Inconsistent telemetry extends incident resolution time exponentially. A 5-minut
 
 In a tense, late-afternoon meeting, the Senior SRE leads a focused discussion on optimizing telemetry for payment processing issues, sketching a 3x3 grid to prioritize actionable signals. The Junior Developer, visibly shaken by API timeouts and spiking transaction failures, nervously categorizes log data. The Developer analyzes core system metrics, frustrated by deadlocks and alert noise. Meanwhile, the Product Owner, stressed by customer complaints, highlights delayed payroll deposits but grows cautiously optimistic as the team identifies key telemetry for real-time fraud detection. The room hums with urgency, determination, and a shared drive to untangle the chaos.
 
-![Panel 3: The Noise vs. Signal Chart](comics\chapter_08-section_001_chapter_08-panel-3-page.jpg)
+![Panel 3: The Noise vs. Signal Chart](comics\chapter_08-section_001_chapter_08-panel-3-page.gif)
 ### Teaching Narrative
 
 Systematic telemetry quality assessment reveals why diagnosis takes so long. By categorizing observability data along usefulness and timeliness dimensions, teams identify where their monitoring generates noise instead of insight.
@@ -114,7 +114,7 @@ Poor telemetry quality creates alert fatigue and delayed response. Engineers ign
 
 In the dimly lit operations center at 3:17 a.m., tension grips the team as they confront a major payment outage. The Senior SRE, focused and tense, analyzes a sharp drop in successful transactions. The Junior Developer, pale and anxious, identifies an overlooked metric—“Card Network Latency”—as the root cause. The Product Owner, worried but attentive, watches the screens, piecing together the incident’s impact. A Developer points out the hidden signal, sparking understanding. Amid the stress, determination grows as the team collaborates to resolve the issue and prevent future oversights, their urgency underscored by the glow of failing transaction alerts.
 
-![Panel 4: The Misleading Metric](comics\chapter_08-section_001_chapter_08-panel-4-page.jpg)
+![Panel 4: The Misleading Metric](comics\chapter_08-section_001_chapter_08-panel-4-page.gif)
 ### Teaching Narrative
 
 Hidden signals represent collected but functionally invisible telemetry. Critical metrics buried in secondary dashboards or lacking alerts fail to serve their purpose, extending incident detection and diagnosis time.
@@ -139,7 +139,7 @@ Every hidden critical metric represents potential undetected outages. When key i
 
 In the dimly lit operations center, tension runs high as a critical payment processing failure unfolds. The Senior SRE, focused and commanding, identifies a silent failure path blocking transactions for thousands of customers. The Junior Developer, panicked, discovers unlogged errors, while the Product Owner, visibly worried, grapples with the scale of the impact. The Developer frantically searches for the issue in the code as the team races against time, their urgency mirrored in the flashing alerts and rising transaction failures. Amid overlapping voices and rapid commands, they work with determination to resolve the crisis before further damage occurs.
 
-![Panel 5: The Ghost Error](comics\chapter_08-section_001_chapter_08-panel-5-page.jpg)
+![Panel 5: The Ghost Error](comics\chapter_08-section_001_chapter_08-panel-5-page.gif)
 ### Teaching Narrative
 
 Silent failure paths are critical risks during incidents. They occur when code fails without generating telemetry, leaving teams blind to the issue. These gaps often stem from rushed implementations or poor change management. During active incidents, they can significantly delay detection and resolution, amplifying customer impact.
@@ -164,7 +164,7 @@ Silent failures create the worst customer experience: problems without explanati
 
 In a tense incident response room, monitors flash red alerts as the Senior SRE, calm yet commanding, analyzes a halted payment system affecting 50,000 transactions per minute. The Junior Developer, frozen in shock, hesitates over error logs, while the Product Owner grips her notepad, overwhelmed by the disruption’s scale. A Developer by the whiteboard struggles to untangle event timelines. Amid the chaos, the Senior SRE’s steady words—“You’re not hunting villains. You’re building timelines.”—shift the team’s focus from blame to collaboration. Gradually, the group unites, piecing together the incident with clarity and purpose, their tension easing into collective problem-solving.
 
-![Panel 6: Blame Isn't the Goal](comics\chapter_08-section_001_chapter_08-panel-6-page.jpg)
+![Panel 6: Blame Isn't the Goal](comics\chapter_08-section_001_chapter_08-panel-6-page.gif)
 ### Teaching Narrative
 
 Effective observability improvement requires blame-free culture. Focusing on timeline construction and information gaps rather than fault-finding creates psychological safety for honest assessment and collaborative enhancement.
@@ -189,7 +189,7 @@ Blame culture directly correlates with extended incident recovery times. When te
 
 In a tense, high-stakes meeting room overlooking the city, the team works urgently to resolve a critical payment system failure affecting over 50,000 transactions per minute. The Lead Engineer, focused and analytical, leads the discussion, highlighting issues like transaction deadlocks and fraud detection anomalies. The stressed Senior SRE scrutinizes alerts, while the anxious Junior Developer struggles with incomplete logs. The Product Owner, alarmed by customer impact, pushes for swift fixes to restore trust. Amid mounting pressure, the team debates priorities, balancing technical challenges and business needs, their urgency underscoring the critical importance of resolving the crisis.
 
-![Panel 7: Telemetry Rewrite Planning](comics\chapter_08-section_001_chapter_08-panel-7-page.jpg)
+![Panel 7: Telemetry Rewrite Planning](comics\chapter_08-section_001_chapter_08-panel-7-page.gif)
 ### Teaching Narrative
 
 Effective decision-making transforms retrospective insights into actionable priorities. By evaluating specific gaps with clear ownership and impact analysis, teams convert general observations into focused engineering work that drives improvement.
@@ -214,7 +214,7 @@ Unaddressed observability gaps guarantee incident recurrence. Each undocumented 
 
 In a tense glass-walled conference room, the Senior SRE analyzed a payment system failure, pointing to red spikes on a dashboard representing thousands of failed transactions. The Junior Developer, pale and anxious, struggled with traceability gaps, while the Developer, initially surprised, grasped the issue’s scale. The Product Owner, alarmed by customer complaints, urgently messaged stakeholders. Breaking the silence, the Senior SRE proposed a standardized log format to restore visibility, rallying the team. Determination replaced tension as the Developer and Junior Developer committed to implementing the plan, offering hope for resolving the crisis and stabilizing the bank’s transaction flows.
 
-![Panel 8: The New Standard](comics\chapter_08-section_001_chapter_08-panel-8-page.jpg)
+![Panel 8: The New Standard](comics\chapter_08-section_001_chapter_08-panel-8-page.gif)
 ### Teaching Narrative
 
 Observability contracts formalize telemetry standards across distributed systems. These specifications ensure consistency and correlation, transforming ad-hoc instrumentation into systematic visibility infrastructure.
@@ -239,7 +239,7 @@ Observability contracts directly reduce mean time to resolution. Consistent tele
 
 In the operations war room at 2:17 AM, tension runs high as the team battles a critical payment processing failure. The Senior SRE, focused and determined, sketches connections on a whiteboard, identifying weak points while crimson alerts flood the monitors. The Junior Developer, initially paralyzed by shock, begins piecing together telemetry data, his resolve growing. The Developer, stressed but methodical, analyzes multiplying fraud detection anomalies, while the Product Owner absorbs the gravity of the spreading impact. Phones buzz, the clock ticks, and the team works urgently to untangle the chaos and restore stability before dawn.
 
-![Panel 9: Lesson Locked In](comics\chapter_08-section_001_chapter_08-panel-9-page.jpg)
+![Panel 9: Lesson Locked In](comics\chapter_08-section_001_chapter_08-panel-9-page.gif)
 ### Teaching Narrative
 
 Effective observability requires structural design, not just data collection. Systems must generate telemetry that reveals architecture and relationships, telling clear stories even during high-stress incident conditions.
@@ -264,7 +264,7 @@ Well-designed observability directly correlates with faster incident resolution 
 
 In the glass-walled incident response room at 3:17 AM, tension is palpable as a payment system outage spirals. The Senior SRE, gripping a marker, scrutinizes red spikes on the dashboard, while the Junior Developer hesitates over error logs, seeking guidance. The Developer spots unreported fraud anomalies, his realization dawning visibly. The Product Owner, overwhelmed by customer complaints, clutches her notepad in shock. Breaking the silence, the Senior SRE emphasizes the urgency of proactive detection, prompting the team into action. Determined, they refocus, their faces lit by dashboards, united in safeguarding the financial system amidst the crisis.
 
-![Panel 10: Reflection Panel](comics\chapter_08-section_001_chapter_08-panel-10-page.jpg)
+![Panel 10: Reflection Panel](comics\chapter_08-section_001_chapter_08-panel-10-page.gif)
 ### Teaching Narrative
 
 Mature observability shifts from forensic analysis to proactive communication. Systems should actively report emerging issues before they become crises, providing early warnings rather than just incident evidence.

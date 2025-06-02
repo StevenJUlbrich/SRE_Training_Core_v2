@@ -34,7 +34,7 @@ Welcome to the Telemetry Roasting Pit, where "more data" is the lazy engineer's 
 
 The operations center is engulfed in tension as red warning lights flash and critical alerts flood the screens. A panicked Junior Developer struggles to sift through noisy logs, while the Senior SRE identifies a crashing payment gateway and blocked transactions. The Incident Commander, gripped by urgency, monitors escalating failures. Amid the chaos, an experienced engineer isolates high-severity errors tied to a misconfigured settlement process. Guided by her insight, the team filters the logs, uncovering the root cause. Anxiety gives way to focused determination as failed transactions stabilize, signaling the team’s gradual regaining of control.
 
-![Panel 1: Death by Verbose Logging - Signal-to-Noise Ratio](comics\chapter_03-section_001_chapter_03-panel-1-page.jpg)
+![Panel 1: Death by Verbose Logging - Signal-to-Noise Ratio](comics\chapter_03-section_001_chapter_03-panel-1-page.gif)
 ### Teaching Narrative
 
 The chaos illustrates the dangers of verbose logging in a live incident. Leonel's inability to quickly identify the root cause due to overwhelming logs highlights the importance of maintaining a high Signal-to-Noise Ratio (SNR) in telemetry. Sofia's suggestion to filter logs for critical events reinforces the need for strategic logging practices to improve observability and reduce cognitive overload during crises.
@@ -59,7 +59,7 @@ In a major retail bank, verbose logging led to a 3-hour MTTR during a payment ga
 
 In a bustling digital bank operations center, tension mounts as the Senior SRE, Junior Developer, and Product Owner grapple with a hidden crisis. Despite error-free dashboards, frantic customer complaints reveal failed payments. The SRE spots subtle latency in API logs, realizing internal metrics miss end-to-end transaction issues. The Developer uncovers deadlocked settlement batches, confirming the problem. Meanwhile, a frustrated user on a video call pleads for help. Emotions—confusion, urgency, and shock—escalate as the team pieces together the disconnect between system health and real user impact, exposing a critical blind spot in their monitoring.
 
-![Panel 2: The Metrics Don't Match - Reality Verification](comics\chapter_03-section_001_chapter_03-panel-2-page.jpg)
+![Panel 2: The Metrics Don't Match - Reality Verification](comics\chapter_03-section_001_chapter_03-panel-2-page.gif)
 ### Teaching Narrative
 
 This highlights a critical observability principle: when metrics contradict user experience, the metrics are wrong. Katherine's observation exposes the gap between technical measurements and actual customer experience—a gap that often exists because we're measuring the wrong things or measuring them incorrectly. Reality Verification is the practice of validating metrics against actual user experience through active correlation and regular validation of proxy metrics.
@@ -84,7 +84,7 @@ A digital bank's "perfect" uptime metrics showed 99.99% availability while they 
 
 In a high-stakes digital bank operations room, tension peaks as an outage halts over 50,000 transactions per minute. A Junior SRE frantically scans chaotic logs, unable to locate the critical error, while a frustrated Senior SRE struggles to trace the issue amidst unstructured data. A Developer, alarmed by API timeouts, and a grim-faced Product Owner, overwhelmed by customer complaints, reflect the growing urgency. Monitors flash alarming spikes and alerts, but the team remains blocked by unreadable logs. The scene underscores the dire consequences of poor log structure, leaving even skilled engineers powerless during a financial crisis.
 
-![Panel 3: The Unreadable Log - Structured Context](comics\chapter_03-section_001_chapter_03-panel-3-page.jpg)
+![Panel 3: The Unreadable Log - Structured Context](comics\chapter_03-section_001_chapter_03-panel-3-page.gif)
 ### Teaching Narrative
 
 This illustrates how unstructured, poorly contextualized logs create visibility illusions. The system generates abundant log data, yet a Junior SRE Engineer cannot answer the most basic question: what happened to a specific customer's transaction? Structured Context is the deliberate inclusion of relevant metadata in logs to enable effective filtering, searching, and correlation across distributed systems.
@@ -109,7 +109,7 @@ A major bank's fraud detection system flagged legitimate transactions as fraudul
 
 In a tense operations war room, the Senior SRE projects a glowing holographic Venn diagram, emphasizing the critical need to correlate logs, metrics, and traces to resolve a banking crisis. Escalating alerts reveal payment failures and API timeouts, leaving the Junior Developer panicked and the Product Owner pale as financial losses climb. The Developer searches error logs for patterns, while the SRE identifies a deadlock causing the failures. As understanding dawns, tension eases slightly, and the team unites in determination to uncover the full story and address the urgent issue impacting thousands of customers.
 
-![Panel 4: Hector Alavaz Steps In - The Three Pillars Integration](comics\chapter_03-section_001_chapter_03-panel-4-page.jpg)
+![Panel 4: Hector Alavaz Steps In - The Three Pillars Integration](comics\chapter_03-section_001_chapter_03-panel-4-page.gif)
 ### Teaching Narrative
 
 This scene reframes the observability principle into a futuristic, meta context. The holographic Venn diagram reinforces the interconnectedness of logs, metrics, and traces, emphasizing their integration as a cohesive system. The glowing intersections symbolize cross-pillar correlation, complementary perspectives, and the unified narrative necessary for effective observability.
@@ -134,7 +134,7 @@ During a critical trading system outage that cost $50K per minute, teams couldn'
 
 In a glass-walled conference room labeled “Metric Hygiene Clinic,” a tense team of four scrutinizes a chaotic dashboard as critical banking systems falter. The Senior SRE, pointer in hand, demands clarity on an ambiguous metric flashing amber. The Junior Developer, alarmed, grips the table, overwhelmed by alerts of payment delays. The Product Owner, visibly anxious, tracks API failures, while another Developer, tense and frustrated, struggles to decode the data. As the SRE presses for answers, the team begins to grasp the stakes and their collective failure in metric clarity, their stress giving way to a resolve to address the issue.
 
-![Panel 5: Metric Hygiene Clinic - Naming and Ownership](comics\chapter_03-section_001_chapter_03-panel-5-page.jpg)
+![Panel 5: Metric Hygiene Clinic - Naming and Ownership](comics\chapter_03-section_001_chapter_03-panel-5-page.gif)
 ### Teaching Narrative
 
 This exposes a common but critical observability anti-pattern: metrics without clear meaning, ownership, or purpose. Clara's example metric embodies multiple failures—poor naming, unclear measurement, undefined thresholds, and ambiguous ownership. Effective metrics require semantic clarity, definitional precision, ownership assignment, and purpose documentation to transform them from confusing artifacts into diagnostic tools.
@@ -159,7 +159,7 @@ A retail bank discovered that 60% of their "critical" dashboard metrics were eit
 
 At 2:17 PM, the fintech team gathers in a tense conference room as transaction failures spike and logs overflow with noise. The Senior SRE, focused and commanding, identifies key latency and anomaly metrics, while the anxious Junior Developer discovers bloated API logs causing delays. The Developer, visibly stressed, sketches solutions, and the Product Owner, alarmed by customer impact, observes the crisis unfold. Regaining control, the Senior SRE leads efforts to rewrite log formats, inspiring the team. As clarity returns to the system and error graphs stabilize, cautious optimism replaces tension, signaling progress in resolving the payment processing failure.
 
-![Panel 6: Refactoring the Noise - Telemetry Design](comics\chapter_03-section_001_chapter_03-panel-6-page.jpg)
+![Panel 6: Refactoring the Noise - Telemetry Design](comics\chapter_03-section_001_chapter_03-panel-6-page.gif)
 ### Teaching Narrative
 
 This demonstrates the transition from accidental to intentional telemetry design. The team moves from collecting data indiscriminately to deliberately shaping what they capture. Telemetry Design involves intentional capture, format standardization, cardinality management, and field rationalization to transform telemetry from a byproduct into a carefully designed observability system.
@@ -184,7 +184,7 @@ A digital bank's observability costs exceeded $200K/month due to high-cardinalit
 
 In a dimly lit war room, the Senior SRE highlights a dashboard showing synchronized spikes in authentication failures and database retries, signaling a cascading issue in the banking system. The Junior Developer, alarmed, connects the API timeouts to blocked payments, while the Developer tensely analyzes the domino effect. The Product Owner, clutching customer complaints, shifts from confusion to clarity as the dashboard reveals the root cause. A sharp annotation on the screen underscores the impact—50,000 transactions halted. The room falls silent, tension thick as the team prepares for root cause analysis, unified by the dashboard’s stark clarity.
 
-![Panel 7: The Ah-Ha Graph - Pattern Recognition](comics\chapter_03-section_001_chapter_03-panel-7-page.jpg)
+![Panel 7: The Ah-Ha Graph - Pattern Recognition](comics\chapter_03-section_001_chapter_03-panel-7-page.gif)
 ### Teaching Narrative
 
 This illustrates a fundamental observability insight: less is often more. The simplified dashboard reveals patterns invisible in previous noise-filled displays. Pattern Recognition in observability involves signal amplification, relationship visualization, temporal alignment, and root cause inference. By removing noise and focusing on key relationships, hidden correlations become visible.
@@ -209,7 +209,7 @@ A investment firm's trading platform experienced periodic slowdowns costing $100
 
 In a tense after-hours bank operations center, the Senior SRE analyzes a critical payment outage affecting 50,000 transactions per minute, surrounded by red alerts and a distressed system avatar. The Junior Developer, overwhelmed, clutches a notepad as Open Banking API errors flood the logs. The calm Mentor Figure observes unusual fraud activity and seizes the moment to guide. Amid the chaos, the Senior SRE interprets system telemetry as a "cry for help," teaching the Junior Developer to decode the system's distress. Despite the urgency, the team begins transforming the crisis into a learning experience, bridging technical insight and human understanding.
 
-![Panel 8: Lesson Locked In - Telemetry Anthropomorphism](comics\chapter_03-section_001_chapter_03-panel-8-page.jpg)
+![Panel 8: Lesson Locked In - Telemetry Anthropomorphism](comics\chapter_03-section_001_chapter_03-panel-8-page.gif)
 ### Teaching Narrative
 
 Hector Alavaz reflects on his earlier understanding of observability, realizing it’s more than passive data collection. It's an active dialogue between systems and operators. Logs represent speech, metrics express mood, and traces reveal memory. Together, they form a language that enables meaningful interaction with systems, transforming telemetry into communication.
