@@ -51,11 +51,9 @@ All content in this repository, including but not limited to text, images, and c
 
 When reusing or referencing this work, please include the following:
 
+```text
+Content originally created by Steven Ulbrich. Used with permission. Original available at: [[Repository URL]](https://github.com/StevenJUlbrich/SRE_Training_Core_v2)
 ```
-Content originally created by [Your Name]. Used with permission. Original available at: [Repository URL]
-```
-
-Replace `[Your Name]` and `[Repository URL]` with the appropriate information.
 
 ### License
 
