@@ -2,6 +2,12 @@
 
 A comprehensive Site Reliability Engineering training program built around real-world banking and financial services scenarios. Each chapter combines illustrated comic panels, teaching narratives, and hands-on SRE best practices to develop observability, incident response, and operational resilience skills.
 
+## Overview
+
+This project is an **AI-assisted content generation system** designed to produce structured Site Reliability Engineering (SRE) training materials using narrative modeling, image generation, and automated document assembly.
+
+The goal is to improve technical understanding by translating real-world operational scenarios into **visual, story-driven learning formats**.
+
 ---
 
 ## Section 1: Observability Foundations
@@ -31,6 +37,133 @@ Every chapter follows a consistent structure:
 - **SRE Best Practices** — Evidence-based investigation and implementation guidance
 - **Banking Impact** — Business, regulatory, and customer consequences
 - **Implementation Guidance** — Actionable steps to apply the lessons
+
+---
+---
+
+## Why This Project Exists
+
+Traditional SRE training is often:
+
+- text-heavy  
+- abstract  
+- difficult for new engineers to internalize  
+
+This project addresses that by:
+
+- turning real operational issues into **scenario-based narratives**
+- visualizing concepts through **comic-style panels**
+- structuring content for **progressive learning**
+
+---
+
+## System Architecture (Conceptual)
+
+Content Design  
+→ Scenario & Narrative Generation  
+→ Character Modeling (239 characters)  
+→ Image Generation (OpenAI APIs)  
+→ Panel Composition (Python)  
+→ Markdown Assembly (Python)  
+→ Final Training Artifacts  
+
+---
+
+## Key Capabilities
+
+### 1. Narrative-Driven Training
+
+- Generates **scenario-based technical stories** representing real-world SRE situations  
+- Designed to improve comprehension of:
+  - incident response  
+  - observability  
+  - system behavior  
+
+---
+
+### 2. Character & Scenario Modeling
+
+- Maintains **239 distinct characters** across training content  
+- Enables consistent storytelling and reusable learning scenarios  
+
+---
+
+### 3. AI Image Generation Integration
+
+- Integrates with **OpenAI image generation APIs**  
+- Produces **panel-level visuals** aligned to narrative content  
+
+---
+
+### 4. Panel Composition Engine
+
+- Python-based tooling to:
+  - combine generated images  
+  - structure them into **comic-style layouts**  
+- Supports consistent formatting across training modules  
+
+---
+
+### 5. Markdown Assembly Pipeline
+
+- Custom Python solution to:
+  - merge narrative + images  
+  - generate **structured Markdown training documents**  
+- Enables portability, readability, and reuse  
+
+---
+
+## Technologies Used
+
+- **Python** (automation, orchestration, document assembly)  
+- **OpenAI APIs** (image generation, AI-assisted workflows)  
+- **Markdown** (structured content output)  
+- **Image Processing Pipelines** (panel composition)  
+
+---
+
+## Role & Approach
+
+This project reflects a **Site Reliability Engineering perspective applied to learning systems**:
+
+- Built as a **practical solution to improve team onboarding and understanding**  
+- Focused on **clarity, structure, and real-world applicability**  
+- Combines:
+  - systems thinking  
+  - applied development  
+  - AI-assisted workflows  
+
+---
+
+## Outcomes
+
+- Enabled more engaging and effective SRE training  
+- Transformed complex system behavior into **clear, teachable formats**  
+- Demonstrated how AI can support **structured knowledge delivery and operational learning**
+
+---
+
+## Repository Notes
+
+This repository represents the **final output structure** of the system.
+
+Earlier development phases included:
+
+- content modeling  
+- prompt design iterations  
+- pipeline experimentation  
+- tooling refinement  
+
+These stages are not fully represented but were critical to achieving the final system.
+
+---
+
+## Future Enhancements (Optional)
+
+- Interactive training modules  
+- Web-based visualization interface  
+- Expanded AI-driven scenario generation  
+- Integration with learning management systems (LMS)
 
 ---
 
